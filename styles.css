@@ -149,29 +149,24 @@ h1, h2 {
     font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #d4af37; /* tom dourado */
+    color: #40E0D0; /* azul turquesa */
     text-shadow:
-        0 0 5px #f9d976,
-        0 0 10px #d4af37,
-        0 0 20px #b8860b;
+        0 0 5px #40E0D0,
+        0 0 10px #30cfcf,
+        0 0 20px #28baba;
 }
 
-/* Linha decorativa abaixo dos títulos */
-h2 {
-    position: relative;
-    margin-bottom: 40px;
-}
-
+/* Linha decorativa azul turquesa abaixo dos títulos */
 h2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -12px;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, #d4af37, #f9d976);
-    border-radius: 2px;
+    background: linear-gradient(90deg, #40E0D0, #30cfcf);
+}
+
+/* Iniciais do casal em azul turquesa */
+.logo-container::before {
+    color: #40E0D0;
+    text-shadow:
+        0 0 10px #40E0D0,
+        0 0 20px #30cfcf;
 }
 
 /* Iniciais do casal em destaque no topo */
