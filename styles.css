@@ -125,7 +125,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 imagens por linha */
     gap: 20px;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -143,7 +143,7 @@ body {
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-        max-width: 100%;
+        max-width: 50%;
     }
 }
 
