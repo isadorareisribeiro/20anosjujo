@@ -129,17 +129,22 @@ body {
     margin: 0 auto;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+/* Para telas menores: 2 imagens por linha */
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; /* opcional: espaçamento menor em telas pequenas */
+        max-width: 600px; /* opcional: largura da galeria reduzida */
+    }
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
+/* Para celulares bem pequenos: 1 imagem por linha */
+@media (max-width: 500px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        max-width: 100%;
+    }
 }
 
 /* Fonte ainda mais clássica para títulos */
