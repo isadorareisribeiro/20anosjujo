@@ -62,7 +62,7 @@ body {
 /* GRATIDÃO */
 .gratitude {
     padding: 60px 20px;
-    max-width: 900px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@ h2::after {
     color: #40E0D0;
     text-shadow:
         0 0 10px #40E0D0,
-        0 0 20px #30cfcf;
+        0 0 20px #2be2e2;
 }
 
 /* Iniciais do casal em destaque no topo */
