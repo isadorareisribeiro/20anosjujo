@@ -62,7 +62,7 @@ body {
 /* GRATIDÃO */
 .gratitude {
     padding: 60px 20px;
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .beginning-img {
-    width: 900px;
+    width: 300px;
     max-width: 90%;
     border-radius: 15px;
     border: 3px solid rgba(255,255,255,0.4);
@@ -149,16 +149,16 @@ h1, h2 {
     font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #40E0D0; /* azul turquesa */
+    color: #2ac4b4; /* azul turquesa */
     text-shadow:
-        0 0 5px #40E0D0,
-        0 0 10px #30cfcf,
-        0 0 20px #28baba;
+        0 0 5px #2ac4b4,
+        0 0 10px #2ac4b4,
+        0 0 20px #2ac4b4;
 }
 
 /* Linha decorativa azul turquesa abaixo dos títulos */
 h2::after {
-    background: linear-gradient(90deg, #2ac4b4, #30cfcf);
+    background: linear-gradient(90deg, #2ac4b4, #2ac4b4);
 }
 
 /* Iniciais do casal em azul turquesa */
@@ -183,7 +183,7 @@ h2::after {
     transform: translateX(-50%);
     font-family: 'Great Vibes', cursive;
     font-size: 4rem;
-    color: #7e9bda;
+    color: #41e4fa;
     opacity: 0.25;
     user-select: none;
     pointer-events: none;
