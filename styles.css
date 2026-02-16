@@ -142,6 +142,60 @@ body {
     opacity: 0.8;
 }
 
+/* Fonte ainda mais clássica para títulos */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive, 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #d4af37; /* tom dourado */
+    text-shadow:
+        0 0 5px #f9d976,
+        0 0 10px #d4af37,
+        0 0 20px #b8860b;
+}
+
+/* Linha decorativa abaixo dos títulos */
+h2 {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #d4af37, #f9d976);
+    border-radius: 2px;
+}
+
+/* Iniciais do casal em destaque no topo */
+.logo-container {
+    position: relative;
+    padding: 60px 0 40px 0;
+}
+
+.logo-container::before {
+    content: "A & B"; /* Substitua pelas iniciais do casal */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #d4af37;
+    opacity: 0.25;
+    user-select: none;
+    pointer-events: none;
+    letter-spacing: 10px;
+    z-index: 0;
+}
+
 /* RODAPÉ */
 footer {
     padding: 30px 0;
