@@ -158,15 +158,15 @@ h1, h2 {
 
 /* Linha decorativa azul turquesa abaixo dos títulos */
 h2::after {
-    background: linear-gradient(90deg, #40E0D0, #30cfcf);
+    background: linear-gradient(90deg, #2ac4b4, #30cfcf);
 }
 
 /* Iniciais do casal em azul turquesa */
 .logo-container::before {
-    color: #40E0D0;
+    color: #2ac4b4;
     text-shadow:
-        0 0 10px #40E0D0,
-        0 0 20px #2be2e2;
+        0 0 10px #2ac4b4,
+        0 0 20px #2ac4b4;
 }
 
 /* Iniciais do casal em destaque no topo */
