@@ -125,16 +125,16 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 imagens por linha */
     gap: 20px;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 /* Para telas menores: 2 imagens por linha */
-@media (max-width: 900px) {
+@media (max-width: 400px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px; /* opcional: espaçamento menor em telas pequenas */
-        max-width: 600px; /* opcional: largura da galeria reduzida */
+        max-width: 200px; /* opcional: largura da galeria reduzida */
     }
 }
 
