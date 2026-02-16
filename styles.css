@@ -125,7 +125,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 imagens por linha */
     gap: 10px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -140,8 +140,15 @@ body {
 @media (max-width: 400px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px; /* opcional: espaçamento menor em telas pequenas */
-        max-width: 200px; /* opcional: largura da galeria reduzida */
+        gap: 15px;
+        max-width: 200px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: 120px; /* altura menor para caber melhor */
+        object-fit: cover;
+        border-radius: 8px;
     }
 }
 
@@ -151,6 +158,13 @@ body {
         grid-template-columns: 1fr;
         gap: 10px;
         max-width: 50%;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 }
 
