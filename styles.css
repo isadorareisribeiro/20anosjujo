@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 
@@ -30,7 +30,7 @@ section {
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/cinema.jpg');
+    background-image: url('img/Logo_simples_circular_esmaltaria_preto-removebg-preview.png');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
