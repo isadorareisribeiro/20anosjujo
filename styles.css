@@ -1,200 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --laranja-claro: #ff382a;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #9e2c18;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ESTILO GERAL */
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-header {
-    background-color: #000000;
+/* LOGO */
+.logo-container {
+    padding: 30px 0;
 }
 
-
-section {
-    padding-bottom: 5rem;
+.logo {
+    max-width: 200px;
 }
 
-
-.nav-link {
-    color: #db2626;
-    font-weight: 600;
+/* HERO */
+.hero {
+    padding: 40px 20px;
 }
 
-.inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/WhatsApp\ Image\ 2026-02-15\ at\ 17.25.40.jpeg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 90%;
-    height: 400px;
-    padding: 30px;
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* GRATIDÃO */
+.gratitude {
+    padding: 60px 20px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-/* posicionamento para a imagem à direita */
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+.gratitude h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
+.gratitude-text p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
 
-.esquerda-conteudo {
+/* ONDE TUDO COMEÇOU */
+.beginning {
+    padding: 80px 20px 40px 20px;
+}
+
+.beginning h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.beginning-photo {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
-.botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
-}
-
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
-}
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/665418a7f880e0a30174ddc0714f81a7-removebg-preview.png') top right no-repeat,
-        url('img/acb77bdf8cb13d30c59d665ce8655456-removebg-preview.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
+    align-items: center;
 }
 
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+.beginning-img {
+    width: 500px;
+    max-width: 90%;
+    border-radius: 15px;
+    border: 3px solid rgba(255,255,255,0.4);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-#galeria {
-    background-color: #FAF4F4;
-
+.beginning-img:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+    box-shadow: 0 20px 50px rgba(255,255,255,0.2);
 }
 
-.fundo-galeria {
-    background: url('img/pngtree-barrel-popcorn-pattern-png-image_4538379.jpg') bottom right no-repeat;
-    background-size: 180px 180px;
+/* GALERIA */
+.gallery {
+    padding: 50px 20px;
 }
 
-#contato {
-    background-image: url('img/cinema.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
-.formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 imagens por linha */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.formulario button {
-    background-color: #9c0000;
-    border: none;
-    font-weight: bold;
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.form-control {
-    background-color: #F1EDEF;
-}
-.menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
-.rotacao-botao{
-    transform: rotate(-90deg);
-    transform-origin: right center;
-}
-
-.opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
-}
-.apresenta-lista{
-    display: none;
-}
-
-.alto-contraste{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
-}
-
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
-}
-
-.alto-contraste .nav-link{
-    color: var(--alto-contraste-link);
-}
-
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary{
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
-}
-
-.alto-contraste #tropicalia {
-    background: none;
-}
-
-.alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
-}
-.alto-contraste .fundo-galeria {
-    background: none;
+/* RODAPÉ */
+footer {
+    padding: 30px 0;
+    font-size: 0.9rem;
+    opacity: 0.6;
 }

@@ -1,130 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 Anos de Amor</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class=" p-5">
 
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="img/Logo_simples_circular_esmaltaria_preto-removebg-preview.png" class="nav-img " loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-                </div>
-            </div>
-        </nav>
-       
+    <!-- LOGO DO CASAL -->
+    <header class="logo-container">
+        <img src="img/Logo_simples_circular_esmaltaria_preto-removebg-preview.png" alt="Logo do Casal" class="logo">
+        <!-- Substitua logo.png pelo arquivo da sua logo -->
     </header>
 
+    <!-- TÍTULO PRINCIPAL -->
+    <section class="hero">
+        <h1>Celebrando 20 Anos de Casamento</h1>
+        <p>Uma história construída com amor, parceria e felicidade.</p>
+    </section>
 
-    <main class="container my-5">
+    <!-- MENSAGEM DE GRATIDÃO -->
+    <section class="gratitude">
+        <h2>Gratidão por Esses 20 Anos</h2>
 
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Conheça a 
-                        historia dessa linda familia!</a>
-                </div>
-               
+        <div class="gratitude-text">
+            <p>Hoje celebramos não apenas uma data, mas uma jornada de amor que se fortaleceu a cada dia.</p>
 
-              </div>
-        </section>
+            <p>Somos gratos pelas risadas compartilhadas, pelos desafios superados e pelos sonhos construídos juntos.</p>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/WhatsApp Image 2026-02-15 at 17.21.54.jpeg" class="rounded-pill" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>Como tudo começou?</h2>
-                    <p class="p-2"> Em 16 de fevereiro de 2006 esse lindo casal deu início a sua bela história, ambos ainda muito jovens mas com a certeza de que já se amavam muito e estavam destinados a ficarem juntos, não muito depois os frutos desse amor começaram a surgir, tendo como consequencia a linda família vista hoje.</p>
-                </div>
-            </div>
-        </section>
+            <p>Cada momento vivido foi um capítulo especial da nossa história.</p>
 
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
+            <p>Que venham muitos outros anos de cumplicidade, respeito e amor eterno.</p>
 
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/images (3).jpeg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/images (4).jpeg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/download (3).jpeg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/download (2).jpeg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-             </div>
-        </section>
+            <p>Obrigado por caminhar ao meu lado durante esses 20 anos incríveis. Você é minha maior bênção.</p>
+        </div>
+    </section>
+<!-- ONDE TUDO COMEÇOU -->
+<section class="beginning">
+    <h2>Onde Tudo Começou</h2>
 
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Isadora Reis Aluna do 3º D Ceppat.</p>
+    <div class="beginning-photo">
+        <img src="img/WhatsApp Image 2026-02-15 at 17.25.40.jpeg" alt="Onde Tudo Começou" class="beginning-img">
+    </div>
+</section>
+    <!-- GALERIA DE FOTOS -->
+    <section class="gallery">
+        <h2>Nossa História em Imagens</h2>
+
+        <div class="gallery-grid">
+            <a href="img/WhatsApp Image 2026-02-15 at 17.21.54.jpeg" target="_blank"><img src="img1.jpg" alt="Foto 1"></a>
+            <a href="img2.jpg" target="_blank"><img src="img2.jpg" alt="Foto 2"></a>
+            <a href="img3.jpg" target="_blank"><img src="img3.jpg" alt="Foto 3"></a>
+            <a href="img4.jpg" target="_blank"><img src="img4.jpg" alt="Foto 4"></a>
+            <a href="img5.jpg" target="_blank"><img src="img5.jpg" alt="Foto 5"></a>
+            <a href="img6.jpg" target="_blank"><img src="img6.jpg" alt="Foto 6"></a>
+            <a href="img7.jpg" target="_blank"><img src="img7.jpg" alt="Foto 7"></a>
+            <a href="img8.jpg" target="_blank"><img src="img8.jpg" alt="Foto 8"></a>
+            <a href="img9.jpg" target="_blank"><img src="img9.jpg" alt="Foto 9"></a>
+            <a href="img10.jpg" target="_blank"><img src="img10.jpg" alt="Foto 10"></a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 - 20 Anos de Amor Eterno</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
-  
-</body>
 
+</body>
 </html>
